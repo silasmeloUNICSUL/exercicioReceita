@@ -1,13 +1,15 @@
 {
   "name": "exercicioReceita",
   "version": "1.0.0",
+  "homepage": "src/index.html",
   "main": "server.js",
   "repository": "https://github.com/silasmeloUNICSUL/exercicioReceita.git",
   "author": "silasmeloUNICSUL <silasmelo.unicsul@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "nodemon src/server.js",
-    "gh-pages": "./node_modules/.bin/gh-pages -d build"
+    "gh-pages": "./node_modules/.bin/gh-pages -d build",
+    "build": ""
   },
   "dependencies": {
     "ejs": "^3.0.1",
