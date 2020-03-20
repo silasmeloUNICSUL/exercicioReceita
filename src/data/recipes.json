@@ -1,0 +1,72 @@
+[
+    
+    {
+        "_id": "5313152a-f1d8-410d-9344-08081548188a",
+        "recipe_name": "Pavê simples de chocolate",
+        "slide_images": [ 
+            { "name": "pavê.jpg", "fig": "Pavê por dentro"}, 
+            { "name": "pavê2.jpg", "fig": "Pavê com raspas de chocolate em barra"},
+            { "name": "pavê3.jpg", "fig": "Montagem do pavê"}, 
+            { "name": "pavê4.jpg", "fig": "Pavê pronto para consumo"},
+            { "name": "pavê5.jpg", "fig": "Pavê pronto para consumo"}
+        ],
+        "audio": [
+            { "name": "som de derrota.mp3", "type": "mp3" },
+            { "name": "som de derrota.ogg", "type": "ogg" },
+            { "name": "som de derrota.wav", "type": "wav" }
+        ],
+        "ingredients": [
+            "1 lata de creme de leite",
+            "1 lata de leite (a mesma medida da lata de creme de leite)",
+            "2 latas de leite condensado",
+            "2 gemas",
+            "2 colheres de maisena",
+            "3 colheres de chocolate em pó ou achocolatado",
+            "biscoito maisena",
+            "leite para molhar os biscoitos",
+            "raspas de chocolate (opcional)",
+            "manteiga sem sal ou margarina, só para dar o ponto"
+        ],
+        "preparation": [
+            "Primeiro, pegue a lata de leite condensado, as gemas, a maisena e o leite.",
+            "Coloque no fogo e deixe até que fique um creme, reserve.",
+            "Coloque a segunda lata de leite condensado com um pouco de margarina e o chocolate.",
+            "Deixe no fogo até ficar um creme tipo brigadeiro.",
+            "Desligue o fogo e junte com o creme de leite."
+        ],
+        "assembly": [
+            "Coloque primeiro o creme branco.",
+            "Em seguida, mergulhe os biscoitos no leite e coloque sobre o creme branco.",
+            "Depois, coloque o creme preto e acrescente as raspas de chocolate sobre ele.",
+            "Deixe no congelador durante 2 horas."
+        ]
+    },
+
+    {
+        "_id": "394ca98f-0afa-4cf8-8814-61b278695b0a",
+        "recipe_name": "Coxinha",
+        "slide_images": [ 
+            { "name": "coxinha.jpg", "fig": "Coxinha"}, 
+            { "name": "coxinha2.jpg", "fig": "Coxinha"}
+        ],
+        "audio": [
+            { "name": "som de derrota.mp3", "type": "mp3" },
+            { "name": "som de derrota.ogg", "type": "ogg" },
+            { "name": "som de derrota.wav", "type": "wav" }
+        ],
+        "ingredients": [
+            "4 xícaras de trigo",
+            "4 xícaras de leite",
+            "1 caldo de galinha",
+            "1/2 colher de margarina"
+        ],
+        "preparation": [
+            "Leve ao fogo o leite, a margarina e o caldo.",
+            "Deixe ferver.",
+            "Despeje de uma só vez o trigo e mexa bem.",
+            "Depois retire da panela e coloque sobre a mesa.",
+            "Sove um pouco e comece a modelar as coxinhas.",
+            "Coloque para fritar em óleo quente, espere dourar, retire e sirva."
+        ]
+    }
+]
