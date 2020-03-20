@@ -1,0 +1,63 @@
+<main class="container">
+    <% const url = `/public/_images/recipes/${_id}`  %> 
+
+    <h1 class='title'> <%= recipe_name %> </h1>
+
+    <section class="slide-show">
+        <% slide_images.forEach( image => { %>
+            <% const { name, fig } = image %> 
+            <% const local = `${url}/images/${name}` %> 
+
+            <figure class='slide-show-image' >
+                <input type="radio" class='inputRadio'  name="selected" >
+                <img class='image-source' src="<%= local %>">
+                <figcaption><%= fig %> </figcaption>
+            </figure>
+        <% }) %>
+
+        <section class='slide-navegation' ></section>
+
+        <script src="/public/_javascript/slide.js"></script>
+    </section>
+
+    <article class='recipe-audio' >
+        <audio controls >
+            <% audio.forEach( object => { %>
+                <% const { name, type } = object %>
+                <% const local = `${url}/sound/${name}` %> 
+
+                <source src='<%= local %>' type='audio/<%= type %> ' />
+            <% }) %>
+        </audio>
+    </article>
+
+    <article class='recipe-step'>
+        <h2>Ingredientes</h2>
+        <ul>
+            <% ingredients.forEach( ingredient => { %>
+                <li> <%= ingredient %> </li>
+            <% }); %>
+        </ul>
+    </article>
+
+    <article class='recipe-step'>
+        <h2>Modo de preparo</h2>
+        <ol>
+            <% preparation.forEach( step => { %>
+                <li> <%= step %> </li>
+            <% }); %>
+        </ol>
+    </article>
+
+    <% if ( assembly !== false ) { %>
+        <article class='recipe-step'>
+            <h2>Montagem</h2>
+            <ol>
+                <% assembly.forEach( step => { %>
+                    <li> <%= step %> </li>
+                <% }); %>
+            </ol>
+        </article>
+    <% } %>
+
+</main>

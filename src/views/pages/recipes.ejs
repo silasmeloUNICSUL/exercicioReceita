@@ -1,0 +1,11 @@
+
+<main class="container">
+    <% recipes.forEach( (object, index) => { %>
+        <% const { title } = object %>
+        
+        <h1 class='logo'>
+            <a href='/receita/<%= index %> '><%= title %> </a>
+        </h1>
+
+    <% }) %>
+</main>

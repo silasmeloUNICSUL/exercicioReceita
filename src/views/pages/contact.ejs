@@ -1,0 +1,59 @@
+<main class="container">
+    <form class='contact-container' action="http://www.agpainformatica.com.br\aula\processa.php" method="POST" > 
+        <h1 class='title'>Fale Conosco</h1>
+
+        <article class="inputContainer">    
+            <input autocomplete="off" type="text" name="nome" id="idName" class="inputForm" />
+            <label for="idName" class="labelForm">Nome</label>
+            <div></div>
+        </article>
+    
+        <article class="inputContainer">
+            <input  autocomplete="off" type="number" maxlength="3" name="txtIdade" id="idAge" class="inputForm" />
+            <label for="idAge" class="labelForm">Idade</label>
+            <div></div>
+        </article>
+
+        <article class="inputContainer">
+            <input  autocomplete="off" type="password" name="txtPassword" id="idPassword" class="inputForm" />
+            <label for="idPassword" class="labelForm">Senha</label>
+            <div></div>
+        </article>
+
+        <article class="inputContainer">
+            <input  autocomplete="off" type="email" name="email" id="idEmail" class="inputForm" />
+            <label for="idEmail" class="labelForm">Email</label>
+            <div></div>
+        </article>
+
+        <article class="inputContainer">
+            <input  autocomplete="off" type="text" name="assunto" id="idAssunto" class="inputForm" />
+            <label for="idAssunto" class="labelForm">Assunto</label>
+            <div></div>
+        </article>
+
+        <article class="inputContainer">
+            <select name="curso" id="idCursos" class="inputForm">
+                <option value=""></option>
+                <option value="TADS">Análise e desenvolvimento de sistemas</option>
+                <option value="CCP">Ciência da computação</option>
+                <option value="TRC">Redes de Computadores</option>
+                <option value="TJD">Jogos digitais</option>
+            </select>
+            <label for="idCursos" class="labelForm">Cursos</label>
+            <div></div>
+        </article>
+
+        <article class="inputContainer">
+            <textarea name="mensagem" id="idMensagem" cols="30" rows="3" class="inputForm"></textarea>
+            <label for="idMensagem" class="labelForm">Mensagem</label>
+            <div></div>
+        </article>
+
+        <article class="inputContainer">
+            <input  autocomplete="off" type="submit" name="" id="idPassword" class="inputForm" value="Enviar" />
+        </article>
+
+        <script src="/public/_javascript/script.js"></script>
+    </form>
+</main>
