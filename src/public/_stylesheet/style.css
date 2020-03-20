@@ -1,0 +1,241 @@
+
+/* All */
+
+.logo a {
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 48pt;
+
+    letter-spacing: 3px;
+    color: var( --fifth-font-color );
+}
+
+.container {
+    width: 90vw;
+    padding: 15px 30px;
+    margin: 80px auto 100px auto;
+    border-right: 2px solid var( --second-color );
+    border-left: 2px solid var( --second-color );
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 15px;
+    color: var( --first-font-color );
+}
+
+/* Receita */
+
+.recipe-audio,
+.recipe-step {
+    margin: 40px 20px 0 20px;
+}
+
+.recipe-step h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var( --first-font-color );
+}
+
+.recipe-step li {
+    margin-bottom: 8px;
+
+    font-size: 14pt;
+    letter-spacing: 2px;
+    color: var( --second-font-color );
+}
+
+/* Slide show */
+
+.slide-show {
+    position: relative;
+    width: 100%;
+    background-color: var( --second-color );
+    height: 480px;
+}
+
+.slide-show-image {
+    overflow: hidden;
+    padding: 5px; 
+    position: absolute;
+    left: 50%;
+    transform: translateX( -50% );
+    height: 100%;
+}
+
+.image-source {
+    transition: opacity 500ms;
+    width: 0;
+    height: inherit;
+    opacity: 0;
+    box-shadow: 2px 2px 4px var( --second-font-color )
+}
+
+.slide-show-image figcaption {
+    padding: 5px 20px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-bottom-right-radius: 10px;
+    opacity: 0.1;
+
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var( --first-font-color );
+}
+
+.slide-show-image figcaption,
+.inputRadio {
+    display: none;
+}
+
+.slide-show-image figcaption:hover,
+.image-source:hover + figcaption {
+    background-color: rgba( 0, 0, 0, 0.6 );
+    opacity: 0.8;
+} 
+
+
+.inputRadio:checked + img.image-source {
+    width: auto;
+    opacity: 1;
+    cursor: pointer;
+}
+
+input.inputRadio:checked ~ figcaption {
+    display: initial;
+} 
+
+.slide-navegation {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    padding: 10px;
+    transform: translateX( -50% );
+}
+
+.slide-navegation label {
+    transition: all 200ms;
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    border: 3px solid var( --third-color );
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px var( --first-color );
+}
+
+
+.slide-navegation label:hover,
+label.image-selected {
+    background-color: var( --third-color );
+    border-radius: 15px;
+}
+
+/* Video */
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.iframe-video {
+    box-shadow: 2px 2px 4px var( --second-font-color );
+}
+
+/* Contato */
+
+.contact-container {
+    margin: auto;
+    max-width: 800px;
+}
+
+.inputContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.inputContainer div {
+    content: '';
+    
+    position: absolute;
+    bottom: 0;
+    transform: translateX( -100% );
+    transition: all 300ms;
+
+    width: 100%;
+    height: 2px;
+    background-color: var( --second-border-color );
+}
+
+.inputContainer:first-child {
+    margin-top: 0;
+}
+
+.inputContainer:last-child {
+    margin-top: 40px;
+}
+
+.labelForm,
+.inputForm {
+    font-size: 14pt;
+    color: var( --first-font-color );
+}
+
+.labelForm {
+    position: absolute;
+    top: 0;
+    left: 7px;
+    transform: translateY( 100% );
+    transition: transform 200ms;
+}
+
+.inputForm {
+    flex: 1;
+    padding: 25px 7px 5px 7px;
+    
+    border: none;
+    border-bottom: 2px solid var( --first-border-color );
+    background: none;
+    cursor: pointer;
+}
+
+select.inputForm option {
+    cursor: pointer;
+    background-color: var( --first-color );
+    color: var( --second-font-color );
+}
+
+.inputForm[type='submit'] {
+    border: none;
+    background-color: var(--fourth-color) ;
+    color: var(--first-font-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.inputForm:focus {
+    outline: none;
+}
+
+div.constains-character,
+.inputForm:focus ~ div {
+    transform: translateX( 0 );
+}
+
+label.constains-character,
+.inputForm:focus + .labelForm {
+    transform: translateY( 0 );
+}

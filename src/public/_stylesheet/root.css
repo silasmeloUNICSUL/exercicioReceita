@@ -1,0 +1,16 @@
+
+:root {
+    --first-color: rgb(35, 37, 41);
+    --second-color: #2c3037;
+    --third-color: #ffffff;
+    --fourth-color: #7899D4;
+
+    --first-font-color: #ffffff;
+    --second-font-color: #94979d;
+    --third-font-color: #2c3037;
+    --fourth-font-color: #7899D4;
+    --fifth-font-color: #25d366;
+
+    --first-border-color: #25d366;
+    --second-border-color: #ff4082;
+}

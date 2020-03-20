@@ -1,0 +1,61 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var( --first-color );
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+audio {
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+    color: var( --first-font-color );
+    background-color: rgba( 255, 255, 255, 0.1 );
+}
+
+audio::-webkit-media-controls-enclosure { 
+    background-color: transparent;
+    border-radius: 0;
+}
+
+/* Textos */
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    color: var( --first-font-color );
+    text-shadow: none;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+} 
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba( 255, 255, 255, 0.3 );
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba( 0, 0, 0, 0.5 );
+}
+
+::-webkit-scrollbar-corner {
+    background-color: rgba( 0, 0, 0, 0.7 );
+}
