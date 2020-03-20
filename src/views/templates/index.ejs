@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+
+    <link rel="stylesheet" href="/public/_stylesheet/root.css">
+    <link rel="stylesheet" href="/public/_stylesheet/reset.css">
+    <link rel="stylesheet" href="/public/_stylesheet/menu.css">
+    <link rel="stylesheet" href="/public/_stylesheet/footer.css">
+    <link rel="stylesheet" href="/public/_stylesheet/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<body>
+
+    <%- include( 'navbar.ejs' ) %>
+    <%- include( '../pages/'+page, params ) %>
+    <%- include( 'footer.ejs' ) %>
+
+</body>
+</html>
