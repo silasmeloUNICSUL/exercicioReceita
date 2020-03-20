@@ -27,9 +27,30 @@ app.get( '/contato', ( req, res ) => {
     })
 })
 
+app.get( '/receitas', ( req, res ) => {
+    const recipes = dados.map( object => {
+        return { title: object.recipe_name }
+    })
+
+    res.render( './templates/index', { 
+        page: 'recipes.ejs', 
+        params: { recipes } 
+    })
+})
+
 app.get( '/receita/:id', ( req, res ) => {
     const { id } = req.params
-    const params = dados[id]
+    const recipe = dados[id]
+    
+    const params = {
+        _id: recipe._id || false,
+        recipe_name: recipe.recipe_name || "",
+        slide_images: recipe.slide_images || [],
+        audio: recipe.audio || [],
+        ingredients: recipe.ingredients || [],
+        preparation: recipe.preparation || [],
+        assembly: recipe.assembly || false
+    }
 
     res.render( './templates/index', { 
         page: 'recipe/index.ejs', 
